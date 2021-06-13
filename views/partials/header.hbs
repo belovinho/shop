@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Lavka</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {{!-- локальная переменная login лежит в чеке. Проверяет, залогинен ли пользователь --}}
+        {{#if login}}
+        <a class="nav-link" href="/user/signOut">SignOut</a>
+        <a class="nav-link" href="/user/addGood">New lot on sale</a>
+        <a class="nav-link" href="/user/catalog">Catalog</a>
+        {{else}}
+        <a class="nav-link active" aria-current="page" href="/user/signIn">SignIn</a>
+        <a class="nav-link" href="/user/signUp">SignUp</a>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</nav>

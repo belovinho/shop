@@ -1,0 +1,9 @@
+<h1>editGood</h1>
+
+<form action="/user/editGood/{{currentUser._id}}" method="POST">
+   <input type='text' name='name' value="{{currentUser.name}}">
+    <input type='text' name= 'description' value="{{currentUser.description}}">
+    <input type='text' name='count'value="{{currentUser.count}}">
+    <input type='text' name= 'price'value="{{currentUser.price}}">
+    <button type="submit"> EDIT </button>
+</form>
